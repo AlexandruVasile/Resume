@@ -15,8 +15,8 @@ public class DriverLifeCycleSetting {
 	
 	@BeforeAll
 	public static void beforeAll() {
-		//System.setProperty("webdriver.chrome.driver", "/home/ale/Downloads/chromedriver");
-		WebDriverManager.chromedriver().setup();
+		System.setProperty("webdriver.chrome.driver", "/home/ale/Downloads/chromedriver");
+		//WebDriverManager.chromedriver().setup();
 	}
 	
 	@BeforeEach
