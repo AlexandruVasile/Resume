@@ -1,6 +1,5 @@
 package src.test;
 
-import java.util.concurrent.TimeUnit;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
@@ -24,8 +23,8 @@ public class DriverLifeCycleSetting {
 	public void beforeEach() {
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--headless");
-		driver = new ChromeDriver();
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		driver = new ChromeDriver(options);
+		//driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 	}
 	
 	@AfterEach
