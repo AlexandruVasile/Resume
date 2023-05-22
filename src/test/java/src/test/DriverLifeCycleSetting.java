@@ -9,13 +9,15 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class DriverLifeCycleSetting {
 	protected WebDriver driver;
 	
 	@BeforeAll
 	public static void beforeAll() {
-		System.setProperty("webdriver.chrome.driver", "/home/ale/Downloads/chromedriver");
-		
+		//System.setProperty("webdriver.chrome.driver", "/home/ale/Downloads/chromedriver");
+		WebDriverManager.chromedriver().setup();
 	}
 	
 	@BeforeEach

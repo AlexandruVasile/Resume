@@ -23,9 +23,10 @@ public class BasePagePO {
 		find(element).click();
 	}
 	
-	
-	
+	//kkssk
+	// ddd
 	//lalla
+	// aadsdds
 	public void type(By element, String text) {
 		find(element).sendKeys(text);
 	}
