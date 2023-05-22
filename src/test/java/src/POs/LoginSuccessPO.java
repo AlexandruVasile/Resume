@@ -13,4 +13,6 @@ public class LoginSuccessPO extends BasePagePO{
 	public boolean successBoxIsPresent() {
 		return isIn(successBox);
 	}
+	// bho
+	// ciao
 }
