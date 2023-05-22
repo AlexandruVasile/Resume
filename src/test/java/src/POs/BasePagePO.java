@@ -23,6 +23,9 @@ public class BasePagePO {
 		find(element).click();
 	}
 	
+	
+	
+	//lalla
 	public void type(By element, String text) {
 		find(element).sendKeys(text);
 	}
